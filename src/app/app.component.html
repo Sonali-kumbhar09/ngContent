@@ -4,14 +4,16 @@
       <app-test>
 
         <h2> I LOVE ANGULAR</h2>
-        <p class="alert alert-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptates sapiente numquam quia quis
-            cupiditate delectus sed earum ea dolor. Officiis, et.</p>
+        <p class="alert alert-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, ad. Dicta quis reprehenderit 
+          velit inventore, numquam aliquid non saepe voluptas assumenda fugit 
+          explicabo eum tempora amet totam earum perferendis!</p>
         
       </app-test>
     </div>
   </div>
 </div>
 
+<!-- ..........Auth........ -->
 
 <div class="container mt-5">
   <div class="row">
@@ -30,15 +32,7 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
+<!-- ..........Post-cards.......... -->
 
 <div class="container mt-5">
   <h1 class="text-center mb-4 fw-bold p-2" style="background-color:hsl(25, 98%, 52%); color:white; border-radius:5px;">
@@ -50,13 +44,17 @@
         <h2>{{post.title}}</h2>
         <p>{{post.body}}</p>
         <div class="card-action d-flex justify-content-between">
-          <button class="btn btn-sm btn-outline-info" data-id="{{post.id}}">Edit</button>
-          <button class="btn btn-sm btn-outline-danger">Remove</button>
+          <button class="btn btn-sm btn-info" data-id="{{post.id}}">Edit</button>
+          <button class="btn btn-sm btn-danger">Remove</button>
         </div>
       </app-post-card>
     </div>
   </div>
 </div>
+
+
+
+<!-- .............confirm dialog box.......... -->
 
 <div class="container mt-5">
   <div class="row">
@@ -73,8 +71,8 @@
         </div>
 
         <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm btn-outline-info">Edit</button>
-          <button (click)="onPostRemove()" class="btn btn-sm btn-outline-danger">Remove</button>
+          <button class="btn btn-sm btn-primary">Edit</button>
+          <button (click)="onPostRemove()" class="btn btn-sm btn-danger">Remove</button>
         </div>
 
       </div>
